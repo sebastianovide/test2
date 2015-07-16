@@ -1,6 +1,13 @@
 @import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
 
-html {
+
+/*.md-toolbar-tools h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: inherit;
+}*/
+
+/*html {
   font-family: 'Roboto Slab', serif;
 }
 
@@ -52,4 +59,4 @@ section.jumbotron h1 {
 .techs md-card img.pull-right {
   float: right;
   width: 50px;
-}
+}*/

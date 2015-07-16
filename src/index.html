@@ -2,7 +2,7 @@
 <html ng-app="leanseedsite">
   <head>
     <meta charset="utf-8">
-    <title>leanseedsite</title>
+    <title>The Lean Seed Ltd</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -19,12 +19,40 @@
     <!-- endinject -->
     <!-- endbuild -->
   </head>
-  <body>
+  <body layout="column" layout-fill ng-controller="IndexController as vm">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div ng-view></div>
+
+    <md-toolbar layout="row">
+      <div class="md-toolbar-tools">
+        <span class="md-headline" style="color: #fff; font-weight: bold;">The Lean Seed</span>
+        <span class="md-headline" style="color: #ff3;">: Happy of helping startups to succeed.</span>
+      </div>
+    </md-toolbar>
+
+    <div layout="row" flex>
+        <div layout="column" flex id="content">
+            <md-content layout="column" flex class="md-padding" ng-view>>
+            </md-content>
+        </div>
+    </div>
+
+    <md-toolbar layout="row">
+      <div class="md-toolbar-tools">
+        <span class="md-caption" style="margin:auto">
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            <img alt="Creative Commons Licence" style="border-width:0;padding-right:10px" src="https://i.creativecommons.org/l/by/4.0/88x31.png" align="left" />
+          </a>
+
+          This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">The Lean Seed Ltd</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />
+          Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/sebastianovide/LeanSeed.co.uk" rel="dct:source">https://github.com/sebastianovide/LeanSeed.co.uk</a>.
+        </span>
+      </div>
+    </md-toolbar>
+
+
 
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->
