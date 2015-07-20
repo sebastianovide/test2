@@ -1,10 +1,12 @@
 <!doctype html>
 <html ng-app="leanseedsite">
   <head>
-    <meta charset="utf-8">
     <title>The Lean Seed Ltd</title>
+    <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
@@ -19,13 +21,45 @@
     <!-- endinject -->
     <!-- endbuild -->
   </head>
-  <body layout="column" layout-fill ng-controller="IndexController as vm">
+  <body layout="row" ng-controller="IndexController as vm">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2"
+                  md-component-id="left"
+                  md-is-locked-open="$mdMedia('gt-sm')">
+
+      <md-toolbar class="md-whiteframe-z1">
+        <h1>TLS</h1>
+      </md-toolbar>
+
+      <md-list>
+        <md-list-item ng-repeat="menuItem in vm.menuItems">
+            <md-button href="{{menuItem.pageUrl}}" ng-class="{'selected' : vm.menuItemSelected === menuItem }"> <!-- TODO -->
+              <md-icon md-font-set="material-icons avatar"> {{menuItem.icon}} </md-icon>
+              {{menuItem.title}}
+            </md-button>
+        </md-list-item>
+      </md-list>
+
+    </md-sidenav>
 
 
-    <md-toolbar layout="row">
+    <div flex layout="column" tabIndex="-1" role="main" class="md-whiteframe-z2" >
+
+      <md-toolbar layout="row" class="md-whiteframe-z1">
+        <md-button class="menu" hide-gt-sm ng-click="vm.toggleSidenav('left')" aria-label="Show User List">
+          <md-icon md-svg-icon="assets/icons/tld.svg" ></md-icon>
+        </md-button>
+        <h1>{{vm.menuItemSelected.contentTitle}}</h1>
+      </md-toolbar>
+
+      <md-content flex layout="column" id="content" ng-view>
+      </md-content>
+
+    </div>
+
+    <!-- <md-toolbar layout="row">
       <div class="md-toolbar-tools">
         <span class="md-headline" style="color: #fff; font-weight: bold;">The Lean Seed</span>
         <span class="md-headline" style="color: #ff3;">: Happy of helping startups to succeed.</span>
@@ -50,7 +84,7 @@
           Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/sebastianovide/LeanSeed.co.uk" rel="dct:source">https://github.com/sebastianovide/LeanSeed.co.uk</a>.
         </span>
       </div>
-    </md-toolbar>
+    </md-toolbar> -->
 
 
 

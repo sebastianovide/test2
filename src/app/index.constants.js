@@ -1,10 +1,10 @@
-/* global malarkey:false, moment:false */
+/* global moment:false, window */
 (function() {
   'use strict';
 
   angular
     .module('leanseedsite')
-    .constant('malarkey', malarkey)
+    .constant('_', window._)
     .constant('moment', moment);
 
 })();

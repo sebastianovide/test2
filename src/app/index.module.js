@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('leanseedsite', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ngRoute', 'ngMaterial']);
+    .module('leanseedsite', ['ngRoute', 'ngMaterial']);
 
 })();

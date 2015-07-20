@@ -7,8 +7,10 @@
 
   function routeConfig($routeProvider) {
     $routeProvider
-      .otherwise({
-        redirectTo: '/about'
+      .when('/about', {
+        templateUrl: 'app/about/about.html',
+        controller: 'AboutController',
+        controllerAs: 'about'
       });
   }
 

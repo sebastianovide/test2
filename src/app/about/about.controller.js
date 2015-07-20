@@ -3,13 +3,13 @@
 
   angular
     .module('leanseedsite')
-    .controller('MainController', MainController);
+    .controller('AboutController', AboutController);
 
   /** @ngInject */
-  function MainController($routeParams) {
-    var vm = this;
-
-    vm.articlesType = $routeParams.articlesType;
+  function AboutController() {
+    // var vm = this;
+    //
+    // vm.articlesType = $routeParams.articlesType;
     // vm.awesomeThings = [];
     // vm.classAnimation = '';
     //

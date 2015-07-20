@@ -7,8 +7,10 @@
 
   function routeConfig($routeProvider) {
     $routeProvider
-      .otherwise({
-        redirectTo: '/about'
+      .when('/articles/:articlesType', {
+        templateUrl: 'app/main/main.html',
+        controller: 'MainController',
+        controllerAs: 'main'
       });
   }
 
