@@ -10,13 +10,13 @@ html, body {
 
 /* Toolbar area */
 
-.menu {
+/*.menu {
   background-color: transparent;
   border: none;
   height: 38px;
   margin: 16px;
   width: 36px;
-}
+}*/
 
 md-toolbar h1 {
   margin: auto;
@@ -28,20 +28,35 @@ md-list .md-button {
   color: inherit;
   font-weight: 500;
   text-align: left;
+  margin: auto;
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-md-list .md-button.selected {
+md-list md-list-item.selected {
   color: #03a9f4;
+  background-color: #eee;
 }
 
+/*md-list md-list-item {
+  padding-left: 20px;
+  padding-right: 20px;
+}*/
+
 md-sidenav  md-list {
-  padding: 0px 0px 8px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+md-sidenav.md-locked-open {
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
 }
 
 
 /* Primary content area */
 
-#content {
+/*#content {
   overflow: hidden;
 }
 
@@ -49,9 +64,9 @@ md-sidenav  md-list {
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 5px;
-}
+}*/
 
-#content .md-button.contact {
+/*#content .md-button.contact {
   background-color: transparent;
   border: none;
   width: 48px;
@@ -60,42 +75,42 @@ md-sidenav  md-list {
   position: absolute;
   top: 10px;
   right: 40px;
-}
+}*/
 
-#content md-icon.avatar {
+/*#content md-icon.avatar {
   margin-top: 10px;
-}
+}*/
 
-#content .md-button.contact > md-icon {
+/*#content .md-button.contact > md-icon {
   fill:black;
   width:36px;
   height:36px;
-}
+}*/
 
-md-button.menuBtn > md-icon {
+/*md-button.menuBtn > md-icon {
   fill:white;
   width:24px;
   height:24px;
-}
+}*/
 
-#content .md-button.contact:active > md-icon {
+/*#content .md-button.contact:active > md-icon {
   background-color: #dadada;
   border-radius: 75%;
   padding:4px;
   transition: all 100ms ease-out 30ms;
-}
+}*/
 
-#content img {
+/*#content img {
   display: block;
   height: auto;
   max-width: 500px;
-}
+}*/
 
 /* Utils */
 
-.content-wrapper {
+/*.content-wrapper {
   position: relative;
-}
+}*/
 
 /* Typography support coming in 0.8.0 */
 
@@ -104,12 +119,12 @@ md-toolbar h1 {
   font-weight: 400;
 }
 
-.avatar {
+/*.avatar {
   position: relative;
-  /*width: 128px;
+  width: 128px;
   height: 128px;
   border: 1px solid #ddd;
-  border-radius: 50%;*/
+  border-radius: 50%;
   display: inline-block;
   overflow: hidden;
   margin: 10px;
@@ -118,18 +133,18 @@ md-toolbar h1 {
   transform: translateZ(0);
   -webkit-transform: scale(1.70);
   -moz-transform:scale(1.70);
-}
+}*/
 
 
-md-bottom-sheet  md-icon {
+/*md-bottom-sheet  md-icon {
   margin-right:20px;
-}
+}*/
 
-span.name {
+/*span.name {
   font-weight: bold;
   font-size:1.1em;
   padding-left:5px;
-}
+}*/
 
 [ng\:cloak], [ng-cloak], .ng-cloak {
   display: none !important;

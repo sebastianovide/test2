@@ -35,9 +35,9 @@
       </md-toolbar>
 
       <md-list ng-cloak>
-        <md-list-item ng-repeat="menuItem in vm.menuItems">
-            <md-button href="{{menuItem.pageUrl}}" ng-class="{'selected' : vm.menuItemSelected === menuItem }"> <!-- TODO -->
-              <md-icon md-font-set="material-icons avatar"> {{menuItem.icon}} </md-icon>
+        <md-list-item ng-repeat="menuItem in vm.menuItems" ng-class="{'selected' : vm.menuItemSelected === menuItem }" >
+            <md-button href="{{menuItem.pageUrl}}" >
+              <md-icon md-font-set="material-icons avatar">{{menuItem.icon}}</md-icon>
               {{menuItem.title}}
             </md-button>
         </md-list-item>
