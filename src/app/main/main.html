@@ -1,26 +1,25 @@
 <md-card>
 
   <md-toolbar layout="row" class="inner-toolbar" >
-    <h1 flex layout-align="center">Title</h1>
-    <md-button ng-href="/#/articles/blog/123" class="menu" aria-label="Show Menu">
+    <h1 flex layout-align="center" class="md-primary">Title</h1>
+    <md-button ng-href="/#/articles/blog/123" class="menu md-primary" aria-label="Show Menu">
       <md-icon md-font-set="material-icons">link</md-icon>
     </md-button>
   </md-toolbar>
   <md-subheader class="md-primary">{{12/12/12|date}}</md-subheader>
 
   <md-card-content>
-
-    <div flex layout="row" layout-align="center center">
-      <md-icon md-font-set="material-icons">build </md-icon>
-    </div>
-    <div flex layout="row" layout-align="center center">
-      <md-icon md-font-set="material-icons">build </md-icon>
-    </div>
-    <div flex layout="row" layout-align="center center">
-      <md-icon md-font-set="material-icons">build </md-icon>
-    </div>
     <div flex layout="row" layout-align="center center">
       <md-icon md-font-set="material-icons">build </md-icon>
     </div>
   </md-card-content>
 </md-card>
+
+<div layout="row">
+  <md-button flex ng-disabled="true" class="md-raised">
+    Previous
+  </md-button>
+  <md-button flex class="md-raised">
+    Next
+  </md-button>
+</div>

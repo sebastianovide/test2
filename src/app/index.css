@@ -22,6 +22,13 @@ html, body {
 
 md-toolbar h1 {
   margin: 20px;
+  font-size: 1.250em;
+  font-weight: 400;
+}
+
+
+md-toolbar md-icon {
+  color: black;
 }
 
 md-toolbar.top-toolbar,
@@ -34,6 +41,14 @@ md-toolbar.top-toolbar .md-button {
   margin-right: 0px;
   padding-right: 0px;
   min-width:0;
+  color: black;
+  /*color: rgb(63,81,181);*/
+}
+
+/* Inner toolbar */
+md-toolbar.inner-toolbar {
+  background-color: white;
+  color: rgb(63,81,181);
 }
 
 md-toolbar.inner-toolbar .menu {
@@ -140,10 +155,7 @@ md-sidenav.md-sidenav-left{
 
 /* Typography support coming in 0.8.0 */
 
-md-toolbar h1 {
-  font-size: 1.250em;
-  font-weight: 400;
-}
+
 
 /*.avatar {
   position: relative;

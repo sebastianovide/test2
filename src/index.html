@@ -48,7 +48,7 @@
 
     <div ng-cloak flex layout="column" tabIndex="-1" role="main" class="md-whiteframe-z1" >
 
-      <md-toolbar layout="row" class="top-toolbar md-whiteframe-z2">
+      <md-toolbar layout="row" class="top-toolbar md-whiteframe-z2" ng-show="vm.menuItemSelected.contentTitle">
         <md-button class="menu" hide-gt-sm ng-click="vm.toggleSidenav('left')" aria-label="Show Menu">
           <md-icon md-font-set="material-icons" class="md-primary">menu</md-icon>
         </md-button>
@@ -56,6 +56,18 @@
       </md-toolbar>
 
       <md-content flex layout="column" id="content" ng-view>
+      </md-content>
+
+      <md-divider></md-divider>
+      <md-content>
+        <span class="md-caption" style="margin:auto">
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            <img alt="Creative Commons Licence" style="border-width:0;padding-right:10px; margin-left:10px" src="https://i.creativecommons.org/l/by/4.0/88x31.png" align="left" />
+          </a>
+
+          This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">The Lean Seed Ltd</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />
+          Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/sebastianovide/LeanSeed.co.uk" rel="dct:source">https://github.com/sebastianovide/LeanSeed.co.uk</a>.
+        </span>
       </md-content>
 
     </div>
