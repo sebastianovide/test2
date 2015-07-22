@@ -18,9 +18,29 @@ html, body {
   width: 36px;
 }*/
 
+
+
 md-toolbar h1 {
+  margin: 20px;
+}
+
+md-toolbar.top-toolbar,
+md-toolbar .top-toolbar {
+  background-color: #eee;
+  color: black;
+  /*color: rgb(63,81,181);*/
+}
+md-toolbar.top-toolbar .md-button {
+  margin-right: 0px;
+  padding-right: 0px;
+  min-width:0;
+}
+
+md-toolbar.inner-toolbar .menu {
+  min-width:70px;
   margin: auto;
 }
+
 
 /* Sidenav area */
 
@@ -34,7 +54,7 @@ md-list .md-button {
   padding-right: 20px;
 }
 md-list md-list-item.selected {
-  color: #03a9f4;
+  color: black;
   background-color: #eee;
 }
 
@@ -47,11 +67,17 @@ md-sidenav  md-list {
   padding: 0px 0px 0px 0px;
 }
 
-md-sidenav.md-locked-open {
-  width: 200px;
-  min-width: 200px;
-  max-width: 200px;
+md-sidenav.md-sidenav-left{
+  width: 150px;
+  min-width: 150px;
+  max-width: 150px;
 }
+
+/*md-sidenav:not(.md-locked-open) {
+  width: 450px;
+  min-width: 450px;
+  max-width: 450px;
+}*/
 
 
 /* Primary content area */
