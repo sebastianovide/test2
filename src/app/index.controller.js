@@ -21,7 +21,7 @@
     $scope.$on("$routeChangeSuccess", function handleRouteChangeEvent() {
       vm.menuItemSelected = _.chain(vm.menuItems)
         .find(function(menuItem){
-          return ("/#" + $location.path()).startsWith(menuItem.pageUrl);
+          return _.startsWith("/#" + $location.path(),menuItem.pageUrl);
         })
         .value();
     });

@@ -19,13 +19,15 @@ html, body {
 }*/
 
 
+md-toolbar {
+  padding: 0px 20px 0px 20px;
+}
 
 md-toolbar h1 {
-  margin: 20px;
+  /*margin: 20px;*/
   font-size: 1.250em;
   font-weight: 400;
 }
-
 
 md-toolbar md-icon {
   color: black;
@@ -38,10 +40,9 @@ md-toolbar .top-toolbar {
   /*color: rgb(63,81,181);*/
 }
 md-toolbar.top-toolbar .md-button {
-  margin-right: 0px;
-  padding-right: 0px;
   min-width:0;
   color: black;
+  margin-left: -3px;
   /*color: rgb(63,81,181);*/
 }
 
@@ -52,7 +53,7 @@ md-toolbar.inner-toolbar {
 }
 
 md-toolbar.inner-toolbar .menu {
-  min-width:70px;
+  min-width:20px;
   margin: auto;
 }
 
