@@ -7,12 +7,12 @@
 
   function routeConfig($routeProvider) {
     $routeProvider
-      .when('/articles/:articlesType', {
+      .when('/articles/:articleType', {
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
-      .when('/articles/:articlesType/:id', {
+      .when('/articles/:articleType/:id', {
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
         controllerAs: 'main'

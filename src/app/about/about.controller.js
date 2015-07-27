@@ -9,7 +9,7 @@
   function AboutController() {
     // var vm = this;
     //
-    // vm.articlesType = $routeParams.articlesType;
+    // vm.articleType = $routeParams.articleType;
     // vm.awesomeThings = [];
     // vm.classAnimation = '';
     //

@@ -1,25 +1,27 @@
 <md-card>
-
   <md-toolbar layout="row" class="inner-toolbar" >
-    <h1 flex layout-align="center" class="md-primary">Title</h1>
-    <md-button ng-href="/#/articles/blog/123" class="menu md-primary" aria-label="Show Menu">
+    <h1 flex layout-align="center" class="md-primary">{{main.article.title}}</h1>
+    <md-button ng-href="{{main.url}}" class="menu md-primary" aria-label="Show Menu">
       <md-icon md-font-set="material-icons">link</md-icon>
     </md-button>
   </md-toolbar>
-  <md-subheader class="md-primary">{{12/12/12|date}}</md-subheader>
+  <md-subheader class="md-primary">created: {{main.article.created|date}} <span ng-show="main.article.updated > main.article.created">/ updated: {{main.article.updated|date}}</span></md-subheader>
 
   <md-card-content>
     <div flex layout="row" layout-align="center center">
-      <md-icon md-font-set="material-icons">build </md-icon>
+      <ng-include src="main.article.file"></ng-include>
     </div>
   </md-card-content>
 </md-card>
 
 <div layout="row">
-  <md-button flex ng-disabled="true" class="md-raised">
+  <md-button flex ng-href="{{main.previousArticle()}}" ng-disabled="{{!main.previousArticle()}}" class="md-raised">
     Previous
   </md-button>
-  <md-button flex class="md-raised">
+  <md-button flex ng-href="{{main.randomArticle()}}" ng-disabled="{{!main.randomArticle()}}" class="md-raised">
+    Random
+  </md-button>
+  <md-button flex ng-href="{{main.nextArticle()}}" ng-disabled="{{!main.nextArticle()}}" class="md-raised">
     Next
   </md-button>
 </div>
