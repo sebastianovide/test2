@@ -33,7 +33,7 @@
     function randomArticle() {
       var article = _(articles)
         .filter(function(v){
-          return (v.id != id);
+          return (v.id !== id);
         })
         .sample();
       if (!article) {
