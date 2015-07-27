@@ -12,6 +12,9 @@
       <ng-include src="main.article.file"></ng-include>
     </div>
   </md-card-content>
+
+  <md-subheader class="md-primary"><span ng-show="main.article.tags">tags: {{main.article.tags | list}}</span></md-subheader>
+
 </md-card>
 
 <div layout="row">

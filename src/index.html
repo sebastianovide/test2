@@ -36,7 +36,7 @@
 
       <md-list ng-cloak>
         <md-list-item ng-repeat="menuItem in vm.menuItems" ng-class="{'selected' : vm.menuItemSelected === menuItem }" >
-            <md-button href="{{menuItem.pageUrl}}" >
+            <md-button href="{{vm.menuUrl(menuItem)}}" >
               <md-icon md-font-set="material-icons">{{menuItem.icon}}</md-icon>
               {{menuItem.title}}
             </md-button>
@@ -46,8 +46,7 @@
     </md-sidenav>
 
     <div ng-cloak flex layout="column" tabIndex="-1" role="main" class="md-whiteframe-z1" >
-
-      <md-toolbar layout="row" class="top-toolbar md-whiteframe-z1" Xng-show="vm.menuItemSelected.contentTitle">
+      <md-toolbar layout="row" class="top-toolbar md-whiteframe-z1" XXXng-show="vm.menuItemSelected.contentTitle">
         <md-button class="menu" hide-gt-sm ng-click="vm.toggleSidenav('left')" aria-label="Show Menu">
           <md-icon md-font-set="material-icons" class="md-primary">menu</md-icon>
         </md-button>

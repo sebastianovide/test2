@@ -39,24 +39,8 @@
     .indexBy("id")
     .value();
 
-  var ARTICLES_NOTE = _(ARTICLES)
-    .filter(function(v) {
-        return _(v.tags).contains('note');
-    })
-    .indexBy("id")
-    .value();
-
-  var ARTICLES_POC = _(ARTICLES)
-    .filter(function(v) {
-        return _(v.tags).contains('poc');
-    })
-    .indexBy("id")
-    .value();
-
-    angular
-      .module('leanseedsite')
-      .constant('ARTICLES', ARTICLES)
-      .constant('ARTICLES_NOTE', ARTICLES_NOTE)
-      .constant('ARTICLES_POC', ARTICLES_POC);
+  angular
+    .module('leanseedsite')
+    .constant('ARTICLES', ARTICLES);
 
 })();
