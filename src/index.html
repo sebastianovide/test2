@@ -57,14 +57,17 @@
     </md-sidenav>
 
     <div ng-cloak flex layout="column" tabIndex="-1" role="main" class="md-whiteframe-z1" >
-      <md-toolbar layout="row" class="top-toolbar md-whiteframe-z1" XXXng-show="vm.menuItemSelected.contentTitle">
-        <md-button class="menu" hide-gt-sm ng-click="vm.toggleSidenav('left')" aria-label="Show Menu">
-          <md-icon md-font-set="material-icons" class="md-primary">menu</md-icon>
-        </md-button>
-        <h1>
-          {{vm.menuItemSelected.contentTitle}}
-        </h1>
-      </md-toolbar>
+
+      <md-button class="menu" hide-gt-sm ng-click="vm.toggleSidenav('left')"
+          aria-label="Show Menu"
+          style="position: absolute;
+          top: 14px;
+          left: 14px;
+          min-width: 36px;
+          z-index: 10;
+          padding: 0px;">
+        <md-icon md-font-set="material-icons" class="md-primary">menu</md-icon>
+      </md-button>
 
       <md-content flex layout="column" id="content" ng-view>
       </md-content>

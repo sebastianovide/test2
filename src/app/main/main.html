@@ -1,11 +1,12 @@
 <md-card>
   <md-toolbar layout="row" class="inner-toolbar" >
+    <div hide-gt-sm style="width: 36px"></div>
     <h1 flex layout-align="center" class="md-primary">{{main.article.title}}</h1>
     <md-button ng-href="{{main.url}}" class="menu md-primary" aria-label="Show Menu">
       <md-icon md-font-set="material-icons">link</md-icon>
     </md-button>
   </md-toolbar>
-  
+
   <md-subheader class="md-primary">created: {{main.article.created|date}} <span ng-show="main.article.updated > main.article.created">/ updated: {{main.article.updated|date}}</span>
   </md-subheader>
 
