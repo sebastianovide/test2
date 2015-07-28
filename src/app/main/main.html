@@ -5,7 +5,9 @@
       <md-icon md-font-set="material-icons">link</md-icon>
     </md-button>
   </md-toolbar>
-  <md-subheader class="md-primary">created: {{main.article.created|date}} <span ng-show="main.article.updated > main.article.created">/ updated: {{main.article.updated|date}}</span></md-subheader>
+  
+  <md-subheader class="md-primary">created: {{main.article.created|date}} <span ng-show="main.article.updated > main.article.created">/ updated: {{main.article.updated|date}}</span>
+  </md-subheader>
 
   <md-card-content>
     <div flex layout="row" layout-align="center center">
@@ -13,7 +15,9 @@
     </div>
   </md-card-content>
 
-  <md-subheader class="md-primary"><span ng-show="main.article.tags">tags: {{main.article.tags | list}}</span></md-subheader>
+  <md-subheader class="md-primary">
+    <md-chips ng-model="main.article.tags" readonly="true" ></md-chips>
+  </md-subheader>
 
 </md-card>
 

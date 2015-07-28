@@ -12,7 +12,7 @@
     var vm = this;
 
     vm.menuItems = [
-      { title: "All articles", contentTitle: "All the articles", pageUrl: "/#/articles", icon: "assignment"},
+      { title: "All articles", contentTitle: "All the articles", pageUrl: "/#/articles", icon: "filter_none"},
       { title: "Notes", contentTitle: "Random notes", pageUrl: "/#/articles", tags: "note", icon: "assignment"},
       { title: "Pocs", contentTitle: "Proof of Concepts", pageUrl: "/#/articles", tags: "poc", icon: "extension"},
       { title: "About", contentTitle: "The Lean Seed", pageUrl: "/#/about", icon: "face"}
