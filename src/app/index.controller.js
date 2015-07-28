@@ -5,10 +5,11 @@
 
   angular
     .module('leanseedsite')
-    .controller('IndexController', IndexController);
+    .controller('IndexController', IndexController)
+    .controller('IndextToastCookiesController', IndextToastCookiesController);
 
   /** @ngInject */
-  function IndexController($location, $mdSidenav, $routeParams, $scope) {
+  function IndexController($location, $mdSidenav, $mdToast, $routeParams, $scope, localStorageService) {
     var vm = this;
 
     vm.menuItems = [
@@ -19,6 +20,15 @@
     ];
     vm.toggleSidenav = toggleSidenav;
     vm.menuUrl = menuUrl;
+
+    if (!localStorageService.get("accept_cookies")) {
+      $mdToast.show({
+        controller: 'IndextToastCookiesController',
+        templateUrl: 'app/index.toast.cookies.html',
+        hideDelay: 0,
+        position: "top left right"
+      });
+    }
 
     $scope.$on("$routeChangeSuccess", function handleRouteChangeEvent() {
       vm.menuItemSelected = _(vm.menuItems)
@@ -39,5 +49,12 @@
         var queryString = menuItem.tags ? "?tags=" + encodeURIComponent(menuItem.tags) : "";
         return menuItem.pageUrl + queryString;
     }
+  }
+
+  function IndextToastCookiesController($scope, $mdToast, localStorageService) {
+    $scope.acceptCookies = function() {
+      localStorageService.set("accept_cookies", true);
+      $mdToast.hide();
+    };
   }
 })();

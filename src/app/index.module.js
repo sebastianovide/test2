@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('leanseedsite', ['ngRoute', 'ngMaterial']);
+    .module('leanseedsite', ['ngRoute', 'ngMaterial', 'LocalStorageModule']);
 
 })();
