@@ -1,15 +1,16 @@
 <md-card class="main-page">
-  <md-card-content>
-    <span class="md-display-1">{{main.article.title}}</span><br>
-    <span md-caption>
-      created: <time>{{main.article.created|date}}</time>
-      <span ng-show="main.article.updated > main.article.created">/ updated: <time>{{main.article.updated|date}}</time></span>
-    </span>
-  </md-card-content>
-
   <md-card-content flex layout="row">
     <article>
-        <ng-include src="main.article.file"  class="article-wrapper"></ng-include>
+      <header>
+        <h1 class="md-display-1">{{main.article.title}}</h1>
+        <p>
+          created: <time>{{main.article.created|date}}</time>
+          <span ng-show="main.article.updated > main.article.created">/ updated:
+            <time>{{main.article.updated|date}}</time>
+          </span>
+        </p>
+      </header>
+      <ng-include src="main.article.file"  class="article-wrapper"></ng-include>
     </article>
   </md-card-content>
 

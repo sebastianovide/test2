@@ -2,12 +2,20 @@ md-card.main-page {
   color: rgba(0,0,0,0.54);
 }
 
+md-card.main-page article>header {
+  margin-bottom: 30px;
+}
+
+md-card.main-page article>header p,
+md-card.main-page article>header h1{
+  margin: auto;
+}
+
 /******************************************************************************
  *
  * Articles content
  */
 article .article-wrapper {
-  white-space: pre-line;
   text-align: justify;
   line-height: 1.5;
   display: block;
@@ -18,9 +26,8 @@ article .article-wrapper code {
   background:#F8F8FF;
   border:black dashed 1px;
   display: block;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  margin-bottom: -14px;
+  padding: 14px 0 14px 0;
+  margin: 14px 0 14px 0;
 }
 
 /* CODE */
