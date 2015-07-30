@@ -8,6 +8,11 @@ html, body {
   padding: 0px;
 }
 
+footer {
+  padding-top: 28px;
+  /*text-align: justify;*/
+}
+
 /* Toolbar area */
 
 /*.menu {
@@ -47,7 +52,7 @@ md-toolbar.top-toolbar .md-button {
 }
 
 /* Inner toolbar */
-md-toolbar.inner-toolbar {
+/*md-toolbar.inner-toolbar {
   background-color: white;
   color: rgb(63,81,181);
 }
@@ -55,7 +60,7 @@ md-toolbar.inner-toolbar {
 md-toolbar.inner-toolbar .menu {
   min-width:20px;
   margin: auto;
-}
+}*/
 
 
 /* Sidenav area */
@@ -89,102 +94,6 @@ md-sidenav.md-sidenav-left{
   max-width: 150px;
 }
 
-/*md-sidenav:not(.md-locked-open) {
-  width: 450px;
-  min-width: 450px;
-  max-width: 450px;
-}*/
-
-
-/* Primary content area */
-
-/*#content {
-  overflow: hidden;
-}
-
-#content  {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 5px;
-}*/
-
-/*#content .md-button.contact {
-  background-color: transparent;
-  border: none;
-  width: 48px;
-  height: 48px;
-  margin: 8px auto 16px 0;
-  position: absolute;
-  top: 10px;
-  right: 40px;
-}*/
-
-/*#content md-icon.avatar {
-  margin-top: 10px;
-}*/
-
-/*#content .md-button.contact > md-icon {
-  fill:black;
-  width:36px;
-  height:36px;
-}*/
-
-/*md-button.menuBtn > md-icon {
-  fill:white;
-  width:24px;
-  height:24px;
-}*/
-
-/*#content .md-button.contact:active > md-icon {
-  background-color: #dadada;
-  border-radius: 75%;
-  padding:4px;
-  transition: all 100ms ease-out 30ms;
-}*/
-
-/*#content img {
-  display: block;
-  height: auto;
-  max-width: 500px;
-}*/
-
-/* Utils */
-
-/*.content-wrapper {
-  position: relative;
-}*/
-
-/* Typography support coming in 0.8.0 */
-
-
-
-/*.avatar {
-  position: relative;
-  width: 128px;
-  height: 128px;
-  border: 1px solid #ddd;
-  border-radius: 50%;
-  display: inline-block;
-  overflow: hidden;
-  margin: 10px;
-  vertical-align: middle;
-  zoom:1.70;
-  transform: translateZ(0);
-  -webkit-transform: scale(1.70);
-  -moz-transform:scale(1.70);
-}*/
-
-
-/*md-bottom-sheet  md-icon {
-  margin-right:20px;
-}*/
-
-/*span.name {
-  font-weight: bold;
-  font-size:1.1em;
-  padding-left:5px;
-}*/
-
 [ng\:cloak], [ng-cloak], .ng-cloak {
   display: none !important;
 }
@@ -196,3 +105,8 @@ md-sidenav.md-sidenav-left{
 md-chips .md-chips {
   box-shadow: none;
 }
+
+
+  ​
+
+    ​

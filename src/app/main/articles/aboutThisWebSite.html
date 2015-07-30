@@ -1,0 +1,50 @@
+<h2>technology</h2>
+I could have used a typical wordpress or google blogger to write a blog, but as the porpuse of this site is not to be a simple blog, but also to act as a test bed for some randon experimet, I've preferred to code it from scratch. I has been created from the <a href="https://github.com/Swiip/generator-gulp-angular">generator-gulp-angular</a>, a very good Yeoman generator for AngularJS with GulpJS. I've used this generator in different projects as it is a piece of cake to work with.
+To kick off a new project, if you don't already have the JS ecosystem simply install it with <code class="inline">npm install -g yo gulp bower</code>. Then run
+
+<code>
+  npm install -g generator-gulp-angular
+  yo gulp-angular my-new-owesome-app
+</code>
+
+After that you just run
+
+<code>
+  gulp serve
+</code>
+
+and it will start a web server and open a browser on the main page. The browser is synchronized with your project folder, so every time you change a file, it will refresh the page automatically. The pages served are not minimized and therefore easy to debug.
+Running
+
+<code>
+  gulp
+</code>
+
+will minimize the code which you can deploy wherever you want.
+
+<h2>hosting</h2>
+It is deployed in <a href="https://pages.github.com/">GitHub pages</a> as it is free and famouse to be very fast. Instead of pushing the files that I want to publish by hand in a gh-pages branch, I share this code in master and publish it using the gulp plugin <a href="https://www.npmjs.com/package/gulp-gh-pages">gulp-gh-pages</a> which can be installed with
+
+<code>
+  npm install --save-dev gulp-gh-pages
+</code>
+
+and adding this code in your gulpfile.js
+
+<code>
+  var ghPages = require('gulp-gh-pages');
+
+  gulp.task('publish', ['build'], function() {
+    return gulp.src('./dist/**/*')
+      .pipe(ghPages());
+  });
+</code>
+
+it allows me to deploy on GitHub with a simple
+
+<code>
+  gulp publish
+</code>
+
+<h2>articles</h2>
+The articles are simple html templates included in the main page with a <code class="inline">ng-include</code>. The file <code class="inline">articles.constants.js</code> contains the list of articles, the templates and some other meta data describing the articles. In a future this file will come from some sort of noSql DB.

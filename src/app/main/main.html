@@ -1,24 +1,21 @@
-<md-card>
-  <md-toolbar layout="row" class="inner-toolbar" >
-    <div hide-gt-sm style="width: 36px"></div>
-    <h1 flex layout-align="center" class="md-primary">{{main.article.title}}</h1>
-    <md-button ng-href="{{main.url}}" class="menu md-primary" aria-label="Show Menu">
-      <md-icon md-font-set="material-icons">link</md-icon>
-    </md-button>
-  </md-toolbar>
-
-  <md-subheader class="md-primary">created: {{main.article.created|date}} <span ng-show="main.article.updated > main.article.created">/ updated: {{main.article.updated|date}}</span>
-  </md-subheader>
-
+<md-card class="main-page">
   <md-card-content>
-    <div flex layout="row" layout-align="center center">
-      <ng-include src="main.article.file"></ng-include>
-    </div>
+    <span class="md-display-1">{{main.article.title}}</span><br>
+    <span md-caption>
+      created: <time>{{main.article.created|date}}</time>
+      <span ng-show="main.article.updated > main.article.created">/ updated: <time>{{main.article.updated|date}}</time></span>
+    </span>
   </md-card-content>
 
-  <md-subheader class="md-primary">
+  <md-card-content flex layout="row">
+    <article>
+        <ng-include src="main.article.file"  class="article-wrapper"></ng-include>
+    </article>
+  </md-card-content>
+
+  <md-card-content>
     <md-chips ng-model="main.article.tags" readonly="true" ></md-chips>
-  </md-subheader>
+  </md-card-content>
 
 </md-card>
 
