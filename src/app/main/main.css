@@ -1,5 +1,6 @@
-md-card.main-page {
+md-card.main-page article {
   color: rgba(0,0,0,0.54);
+  background-color: yellow;
 }
 
 md-card.main-page article>header {
@@ -44,7 +45,6 @@ article .article-wrapper code.inline {
 }
 
 article .article-wrapper h2 {
-  color: rgba(0,0,0,0.54);
   text-transform: capitalize;
   margin-top: 14px;
   margin-bottom: auto;
