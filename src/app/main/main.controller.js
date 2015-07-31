@@ -53,7 +53,7 @@
         return null;
       }
 
-      return '/#' + _.trim($location.path(),'' + id) + article.id + queryString;
+      return '/#!' + _.trim($location.path(),'' + id) + article.id + queryString;
     }
 
     function nextArticle() {
@@ -62,7 +62,7 @@
         return null;
       }
 
-      return  '/#' + _.trim($location.path(),'' + id) + articles[idx].id + queryString;
+      return  '/#!' + _.trim($location.path(),'' + id) + articles[idx].id + queryString;
     }
 
     function previousArticle() {
@@ -71,7 +71,7 @@
         return null;
       }
 
-      return  '/#' + _.trim($location.path(),'' + id) + articles[idx].id + queryString;
+      return  '/#!' + _.trim($location.path(),'' + id) + articles[idx].id + queryString;
     }
   }
 })();

@@ -6,10 +6,11 @@
     .config(config);
 
   /** @ngInject */
-  function config($logProvider, localStorageServiceProvider) {
+  function config($locationProvider, $logProvider, localStorageServiceProvider) {
     // Enable log
     $logProvider.debugEnabled(true);
     localStorageServiceProvider.setStorageCookie(0, '/');
+    $locationProvider.hashPrefix('!');
   }
 
 })();

@@ -46,7 +46,7 @@
       },
       {
         'title': 'Angular Material Design',
-        'url': 'https://material.angularjs.org/#/',
+        'url': 'https://material.angularjs.org/#!/',
         'description': 'The Angular reference implementation of the Google\'s Material Design specification.',
         'logo': 'angular-material.png'
       }
