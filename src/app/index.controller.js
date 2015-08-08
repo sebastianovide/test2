@@ -9,7 +9,7 @@
     .controller('IndextToastCookiesController', IndextToastCookiesController);
 
   /** @ngInject */
-  function IndexController($location, $mdSidenav, $mdToast, $routeParams, $scope, localStorageService) {
+  function IndexController($location, $mdSidenav, $mdToast, $routeParams, $scope, $window, localStorageService) {
     var vm = this;
 
     vm.menuItems = [
@@ -39,6 +39,10 @@
 
           return samePath && sameTags;
         });
+    });
+
+    $scope.$on('$viewContentLoaded', function() {
+      $window.ga('send', 'pageview', { page: $location.url() });
     });
 
     function toggleSidenav(menuId) {
