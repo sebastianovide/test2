@@ -16,14 +16,12 @@ md-card.main-page article>header h1{
  * Articles content
  */
 article .article-wrapper {
-  text-align: justify;
-  line-height: 1.5;
   display: block;
 }
 
 article .article-wrapper code {
   white-space:pre-wrap;
-  background:#F8F8FF;
+  background:aliceblue;
   border:black dashed 1px;
   display: block;
   padding: 14px 0 14px 0;

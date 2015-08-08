@@ -10,18 +10,21 @@ html, body {
 
 footer {
   padding-top: 28px;
-  /*text-align: justify;*/
+  margin-bottom: 10px;
 }
 
-/* Toolbar area */
+q {
+  font-style: italic;
+}
 
-/*.menu {
-  background-color: transparent;
-  border: none;
-  height: 38px;
-  margin: 16px;
-  width: 36px;
-}*/
+/******************************************************************************/
+/* angular material
+/*/
+
+md-content {
+  text-align: justify;
+  line-height: 1.5;
+}
 
 md-icon {
   color: inherit;
@@ -68,24 +71,24 @@ md-toolbar.inner-toolbar .menu {
 
 /* Sidenav area */
 
-md-list .md-button {
-  color: inherit;
-  font-weight: 500;
-  text-align: left;
-  margin: auto;
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-md-list md-list-item.selected {
-  color: black;
-  background-color: #eee;
-}
-
 /*md-list md-list-item {
   padding-left: 20px;
   padding-right: 20px;
 }*/
+
+md-sidenav {
+}
+
+md-sidenav H1 {
+  text-align: center;
+  text-decoration: none;
+  /*color: none;*/
+}
+
+md-sidenav H1 {
+  text-align: center;
+  /*color: none;*/
+}
 
 md-sidenav  md-list {
   padding: 0px 0px 0px 0px;
@@ -95,6 +98,20 @@ md-sidenav.md-sidenav-left{
   width: 150px;
   min-width: 150px;
   max-width: 150px;
+}
+
+md-sidenav md-list .md-button {
+  color: inherit;
+  font-weight: 500;
+  text-align: left;
+  margin: auto;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+md-sidenav md-list md-list-item.selected {
+  color: black;
+  background-color: #eee;
 }
 
 [ng\:cloak], [ng-cloak], .ng-cloak {

@@ -38,13 +38,13 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <md-sidenav ng-cloak flex
-      class="site-sidenav md-sidenav-left md-whiteframe-z2"
-      md-component-id="left"
-      md-is-locked-open="$mdMedia('gt-sm')">
+                class="site-sidenav md-sidenav-left md-whiteframe-z2"
+                md-component-id="left"
+                md-is-locked-open="$mdMedia('gt-sm')">
 
-      <md-toolbar class="md-whiteframe-z1">
-        <h1>TLS</h1>
-      </md-toolbar>
+      <a ng-href="/#!/about" style="text-decoration:none; color:inherit;"><h1>TLS</h1></a>
+
+      <md-divider></md-divider>
 
       <md-list ng-cloak>
         <md-list-item ng-repeat="menuItem in vm.menuItems" ng-class="{'selected' : vm.menuItemSelected === menuItem }" >
@@ -71,7 +71,7 @@
         </a>
         <div flex>
         This work by <strong><span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">The Lean Seed Ltd</span></strong> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-        Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/sebastianovide/LeanSeed.co.uk" rel="dct:source">https://github.com/sebastianovide/LeanSeed.co.uk</a>.
+        Source code in <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/sebastianovide/LeanSeed.co.uk" rel="dct:source">https://github.com/sebastianovide/LeanSeed.co.uk</a>.
         </div>
       </footer>
     </div>
