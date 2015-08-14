@@ -7,7 +7,7 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($routeParams, $location, ARTICLES) {
+  function MainController($routeParams, $location, $rootScope, ARTICLES) {
     var vm = this;
 
     vm.randomArticle = randomArticle;
@@ -40,6 +40,7 @@
     }
 
     vm.article = _articles.find({id:id});
+    $rootScope.title = vm.article.title;
 
     var queryString = _.trimLeft($location.url(),$location.path());
 

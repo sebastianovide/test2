@@ -7,8 +7,10 @@
     .controller('AboutController', AboutController);
 
   /** @ngInject */
-  function AboutController() {
+  function AboutController($rootScope) {
     var vm = this;
+
+    $rootScope.title = "";
 
     // it is calculated everytime the controller is loaded.
     vm.randomQuote = _.sample([
