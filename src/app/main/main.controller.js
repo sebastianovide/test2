@@ -40,7 +40,7 @@
     }
 
     vm.article = _articles.find({id:id});
-    $rootScope.title = vm.article.title;
+    $rootScope.pageTitle = vm.article.title;
 
     var queryString = _.trimLeft($location.url(),$location.path());
 

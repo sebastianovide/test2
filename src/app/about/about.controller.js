@@ -10,7 +10,7 @@
   function AboutController($rootScope) {
     var vm = this;
 
-    $rootScope.title = "";
+    $rootScope.pageTitle = "";
 
     // it is calculated everytime the controller is loaded.
     vm.randomQuote = _.sample([
