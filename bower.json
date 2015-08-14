@@ -2,11 +2,11 @@
   "name": "leanseedsite",
   "version": "0.0.0",
   "dependencies": {
-    "angular-route": "~1.4.0",
+    "angular-route": "~1.4.4",
     "moment": "~2.10.3",
-    "angular": "~1.4.0",
+    "angular": "~1.4.4",
     "lodash": "~3.10.0",
-    "angular-material": "0.10.1-rc4",
+    "angular-material": "~0.10.1",
     "angular-local-storage": "~0.2.2"
   },
   "devDependencies": {

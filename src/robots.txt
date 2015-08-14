@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://www.leanseed.co.uk/sitemap.xml

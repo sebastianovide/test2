@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- static pages -->
+  <url><loc>http://www.leanseed.co.uk/</loc></url>
+  <url><loc>http://www.leanseed.co.uk/#!/about</loc></url>
+
+  <!-- articles -->
+  <url><loc>http://www.leanseed.co.uk/#!/articles/655b66b2</loc></url>
+  <url><loc>http://www.leanseed.co.uk/#!/articles/655b66b2?tags=note</loc></url>
+  <url><loc>http://www.leanseed.co.uk/#!/articles/655b66b2?tags=poc</loc></url>
+
+</urlset>
