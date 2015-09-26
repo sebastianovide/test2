@@ -8,7 +8,7 @@
   function routeConfig($routeProvider) {
     $routeProvider
       .otherwise({
-        redirectTo: '/articles'
+        redirectTo: '/about'
       });
   }
 
