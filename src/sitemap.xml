@@ -7,7 +7,14 @@
 
   <!-- articles -->
   <url><loc>http://www.leanseed.co.uk/#!/articles/655b66b2</loc></url>
+  <url><loc>http://www.leanseed.co.uk/#!/articles/01f30f34</loc></url>
+
+  <!-- notes -->
   <url><loc>http://www.leanseed.co.uk/#!/articles/655b66b2?tags=note</loc></url>
+  <url><loc>http://www.leanseed.co.uk/#!/articles/01f30f34?tags=note</loc></url>
+
+  <!-- pocs -->
   <url><loc>http://www.leanseed.co.uk/#!/articles/655b66b2?tags=poc</loc></url>
+
 
 </urlset>

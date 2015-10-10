@@ -1,6 +1,7 @@
-/*md-card.main-page article {
-  color: rgba(0,0,0,0.54);
-}*/
+/******************************************************************************
+ *
+ * Maerial Design tweaks
+ */
 
 md-card.main-page article>header {
   margin-bottom: 30px;
@@ -9,6 +10,15 @@ md-card.main-page article>header {
 md-card.main-page article>header p,
 md-card.main-page article>header h1{
   margin: auto;
+}
+
+/* removing right space on the tags */
+.md-chips:not(.md-readonly) .md-chip {
+  padding-right: 12px;
+}
+
+.md-chips .md-chip .md-chip-content {
+  padding-right: 0px;
 }
 
 /******************************************************************************
@@ -41,8 +51,14 @@ article .article-wrapper code.inline {
   margin: inherit;
 }
 
-article .article-wrapper h2 {
+article .article-wrapper h2,
+article .article-wrapper h3 {
   text-transform: capitalize;
   margin-top: 14px;
   margin-bottom: auto;
+}
+
+article img {
+ display: block;
+ margin: auto;
 }

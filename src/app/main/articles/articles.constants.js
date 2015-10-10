@@ -22,6 +22,14 @@
       "updated": null,
       "title": "About this web site",
       "file": "aboutThisWebSite.html"
+    },
+    {
+      "id": "01f30f34",
+      "tags": ["note"],
+      "created": 1444470921037,
+      "updated": null,
+      "title": "Technology for Startups",
+      "file": "technologyForStartups.html"
     }
   ];
 
