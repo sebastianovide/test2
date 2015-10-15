@@ -59,6 +59,7 @@ article .article-wrapper h3 {
 }
 
 article img {
- display: block;
- margin: auto;
+  display: block;
+  margin: auto;
+  width: 100%;
 }
