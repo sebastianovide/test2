@@ -36,7 +36,7 @@ npm install --save-dev gulp-gh-pages
 ```
 and adding this code in your gulpfile.js
 
-```
+```javascript
 var ghPages = require('gulp-gh-pages');
 
 gulp.task('publish', ['build'], function() {
