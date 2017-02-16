@@ -2,5 +2,7 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Categories"
+  - title: "by categories"
     url: /categories/
+  - title: "by year"
+    url: /year-archive/
