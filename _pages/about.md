@@ -36,7 +36,7 @@ script: |
     },
   ];
   var quote = quotes[Math.floor(Math.random() * quotes.length)];  $("#quote span").html(quote.quote);
-  
+
   $("#quote cite").html(quote.author);
   $("#quote").show();
 ---
