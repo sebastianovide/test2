@@ -1,7 +1,5 @@
 ---
 layout: single
-title:  "About this website"
-date:   2015-07-16 00:00:00 +0000
 categories: tools
 ---
 # technology
