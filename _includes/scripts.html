@@ -2,3 +2,15 @@
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
+
+<!--
+Added my Sebastian Ovide.
+Run a script if present in  Front Matter
+-->
+{% if page.script %}
+  <script>
+    (function($) {
+      {{ page.script }}
+    })($);
+  </script>
+{% endif %}
