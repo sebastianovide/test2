@@ -74,15 +74,14 @@ analytics:
   google:
     tracking_id          : "UA-65673317-1"
 
-
 # Site Author
 author:
   name             : *myName
   avatar           : "https://secure.gravatar.com/avatar/af7ba58cfad8c99592c16e2823c08cef"
-  bio              : "I am an amazing person."
+  bio              : "I am strong supporter of the lean principles, passionate about startups, agile evangelist, natural born geek"
   location         : "London"
   email            : "sebastian.ovide@gmail.com"
-  uri              :
+  uri              : "https://sebastianovide.github.io/"
   bitbucket        :
   codepen          :
   dribbble         :
@@ -174,7 +173,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/London # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
