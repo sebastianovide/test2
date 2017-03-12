@@ -1,5 +1,4 @@
 ---
-layout: single
 categories: tools
 ---
 # technology

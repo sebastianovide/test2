@@ -1,7 +1,4 @@
 ---
-layout: single
-title:  "Technology for Startups"
-date:   2015-10-10 00:00:00 +0000
 categories: architecture
 ---
 # the best stack
