@@ -78,7 +78,7 @@ analytics:
 author:
   name             : *myName
   avatar           : "https://secure.gravatar.com/avatar/af7ba58cfad8c99592c16e2823c08cef"
-  bio              : "I am strong supporter of the lean principles, passionate about startups, agile evangelist, natural born geek"
+  bio              : "I am strong supporter of the lean principles, passionate about startups, agile evangelist, natural born geek."
   location         : "London"
   email            : "sebastian.ovide@gmail.com"
   uri              : "https://sebastianovide.github.io/"
