@@ -1,7 +1,7 @@
 ---
 categories: architecture
 ---
-# the best stack
+# The best stack
 
 When customers ask me what stack should they use for their startup, my answer is always a variation of "it depends".  
 
@@ -11,17 +11,17 @@ I've seen decent web apps built by skillful Perl developers (I'm talking about 2
 
 For that reason, when choosing the stack, it is crucially important to know who is going to build it, maintain it and eventually expand it.
 
-# example
+# Example
 
 For confidentiality reasons, I’m describing a hypothetical scenario but still based on a real case. The point is to illustrate a use case of some technologies and the reasoning behind choosing them.  
 
 Let’s assume a small and very young open minded to new technologies team. One CEO, one CTO and a couple of superheroes developers. The plan, following lean principles, is to have a live product in less than three months time to then validate it and eventually adapt. The initial number of users is around few hundreds, to very quickly expand to few thousands over the next few months. At peak usage there should be around 10 users acceding the system at the same time. Of course it must work on web browsers and on mobile devices.
 
-## Frontend: SPA based on angular
+## Front end: SPA based on angular
 
 The team is too small to create native applications for each device and also a web app. It would be to expensive. And the truth is that android + iOs dev skills are not in the team. So the answer is to create a responsive single page application based on HTML5 and some good JS framework. In this case our philosophical preference is AngularJS. The learning curve is very flat; it decouples views from logic very nicely which allows the team to get help from UI guys that don’t know JS. Not having UI savvies in the team, Bootstrap can save you. It is very easy to create nice responsive apps with just simple HTML tags plus few CSS classes. Furthermore, the code results very neat and simple to read. As you must guess, instead of starting the project from scratch, I always use some kind of skeleton. In this case I’ve used the same one used for this web site: it is a [Yeoman generator for AngularJS with GulpJS](https://github.com/Swiip/generator-gulp-angular)
 
-## Backend: serverless
+## Back end: serverless
 
 In the first prototype, it won’t be doing much back end work apart of storing information and the usual things such as managing user’s authentication and authorization, sending emails, and some <u>small</u> data processing.  
 Perfect conditions for using some server as a service and forget about managing machines, fail over, redundancies, scaling etc.  
