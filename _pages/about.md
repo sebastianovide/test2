@@ -3,7 +3,7 @@ permalink: /about/
 title:  "About"
 layout: single
 date:   2017-02-16 00:00:00 +0000
-categories: random
+category: random
 script: |
   var quotes = [
     {

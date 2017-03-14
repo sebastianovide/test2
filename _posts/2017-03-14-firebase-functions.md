@@ -1,5 +1,6 @@
 ---
-categories: architecture
+category: tech
+tags: architecture
 ---
 # Cloud functions: finally !
 Back in a [2015 post]({{ site.baseurl }}{% post_url 2015/2015-10-10-technology-for-startups %}) I've explained one way of complementing Firebase with NodeJs on Heroku when server side code was needed. In the mean time, the world has evolved and so Google Cloud Platform. Last week [Google announced](https://cloudplatform.googleblog.com/2017/03/Google-Cloud-Platform-your-Next-home-in-the-cloud.html) that [Google Cloud Functions](https://cloud.google.com/functions) was just released as public beta: that adds another way of complementing firebase. Now the same architecture proposed in 2015 would look like this:

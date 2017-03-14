@@ -1,5 +1,6 @@
 ---
-categories: tools
+category: tech
+tags: tools
 modified: 2017-03-12
 ---
 # It's time for a change

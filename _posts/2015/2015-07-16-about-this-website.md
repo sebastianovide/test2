@@ -1,5 +1,6 @@
 ---
-categories: tools
+category: tech
+tags: tools
 ---
 # technology
 I could have used a typical wordpress or google blogger to write a blog, but as the porpuse of this site is not to be a simple blog, but also to act as a test bed for some randon experimet, I've preferred to code it from scratch. It has been created from the [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular), a very good Yeoman generator for AngularJS with GulpJS. I've used this generator in different projects as it is a piece of cake to work with.

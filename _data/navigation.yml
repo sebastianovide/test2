@@ -2,7 +2,9 @@
 main:
   - title: "About"
     url: /about/
-  - title: "by categories"
-    url: /categories/
+  # - title: "by category"
+  #   url: /categories/
+  - title: "by tags"
+    url: /tags/
   - title: "by year"
     url: /year-archive/

@@ -1,5 +1,6 @@
 ---
-categories: architecture
+category: tech
+tags: architecture
 ---
 # The best stack
 
