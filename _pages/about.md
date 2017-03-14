@@ -42,9 +42,9 @@ script: |
 ---
 The Lean Seed is maintained by Sebastian Ovide, strong supporter of the lean principles, passionate about startups, agile evangelist, natural born geek.
 
-As lead engineer of the [Geovation hub](https://geovation.uk), Britains's pionering location data hub, I've built a team that supports startups on going live with their MVPs as soon as possible. I am pragmaticaly frugal, which means that I keep things as simple as possible maximasing the real business value delivered with the minimal costs.
+As lead engineer of the [Geovation hub](https://geovation.uk), Britains's pioneering location data hub, I've built a team that supports startups on going live with their MVPs as soon as possible. I am pragmatically frugal, which means that I keep things as simple as possible maximising the real business value delivered with the minimal costs.
 
-At the same time I provide technical advice to early stage startups acting as a partime CTO. I help them to develop the MVP, choose the right technologies and building a great tech team.
+At the same time I provide technical advice to early stage startups acting as a par-time CTO. I help them to develop the MVP, choose the right technologies and building a great tech team.
 
 <blockquote id="quote" style="display: none;">
   <span></span>
