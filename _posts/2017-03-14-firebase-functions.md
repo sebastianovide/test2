@@ -23,3 +23,4 @@ I've done a very basic example to see how difficult was to get from 0 to react t
 - [Google Cloud Functions blog](https://cloudplatform.googleblog.com/2017/03/Google-Cloud-Functions-a-serverless-environment-to-build-and-connect-cloud-services_13.html)
 - [Google Cloud Functions](https://cloud.google.com/functions/)
 - [Cloud Functions for Firebase](https://firebase.google.com/features/functions/)
+- [More examples](https://github.com/firebase/functions-samples)
