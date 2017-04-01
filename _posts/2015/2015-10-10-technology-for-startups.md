@@ -36,7 +36,7 @@ It is a matter of few lines of code to create a NodeJs micro service connected t
 
 ## Architecture overview
 
-![Firebase + nodejs]({{ site.url }}/assets/images/Firebase%20+%20nodeJs.png)
+![Firebase + nodejs](https://docs.google.com/drawings/d/1y7HxJLnetNMDz9dV32-oaov3AtOb7ugx1u5hecm06LA/pub?w=731&h=450)
 
 ## Flaws
 
