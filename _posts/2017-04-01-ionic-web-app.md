@@ -1,6 +1,6 @@
 ---
 category: tech
-tags: note
+tags: notes
 ---
 # Ionic for creating PWA [Progressive Web Apps)
 [Ionic](https://ionicframework.com/) is very famous for creating hybrid apps. If you are happy about not using Cordova plugins, you can still use Ionic for creating Web Apps and even [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/).
